@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ADVANCED SEO META TAGS -->
+    <title>Sisil4D - Platform Terdepan Pengembangan Game 4D, SISIL4D.COM</title>
+    <meta name="description" content="Sisil4D adalah sumber daya #1 untuk pengembangan game 4D, tutorial Blender, dan desain edukatif. Dapatkan template gratis, kode Godot, dan alat untuk kreator game Indonesia.">
+    <meta name="keywords" content="Sisil4D, pengembangan game 4D, tutorial Blender Sisil4D, Godot game engine, edukasi STEM, Sisil4D edukasi, template game indie, belajar coding 4D">
+    <meta name="author" content="Sisil4D Team">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://sisil4d.com/">
+
+    <!-- OPEN GRAPH / SOCIAL MEDIA SEO -->
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sisil4D - Inovasi Teknologi 4D dan Game Edukatif">
+    <meta property="og:description" content="Kembangkan karir Anda di dunia 4D modeling dan game development bersama Sisil4D. Tersedia tutorial, aset gratis, dan komunitas untuk developer Indonesia.">
+    <meta property="og:url" content="https://sisil4d.com/">
+    <meta property="og:site_name" content="Sisil4D">
+    <meta property="og:image" content="https://picsum.photos/seed/sisil4d_og/1200/630.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://sisil4d.com/#website",
+          "url": "https://sisil4d.com/",
+          "name": "Sisil4D",
+          "description": "Platform Pengembangan Game 4D dan Edukasi Teknologi",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://sisil4d.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": { "@id": "https://sisil4d.com/", "name": "Home" } },
+            { "@type": "ListItem", "position": 2, "item": { "@id": "https://sisil4d.com/#features", "name": "Fitur Sisil4D" } }
+          ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://sisil4d.com/#article",
+          "headline": "Masa Depan Game Development dengan Sisil4D",
+          "description": "Panduan lengkap menggunakan Sisil4D untuk pemodelan 4D dan pembuatan game edukatif.",
+          "image": "https://picsum.photos/seed/sisil4d_article/1200/600.jpg",
+          "author": { "@type": "Organization", "name": "Sisil4D Team" },
+          "publisher": { "@type": "Organization", "name": "Sisil4D", "logo": { "@type": "ImageObject", "url": "https://sisum.photos/seed/logo/100/100.jpg" } }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary-color: #2563EB;
+            --secondary-color: #1E40AF;
+            --accent-color: #06B6D4;
+            --dark-bg: #0F172A;
+            --light-bg: #F8FAFC;
+            --text-dark: #1E293B;
+            --text-light: #F1F5F9;
+            --card-bg: #FFFFFF;
+            --transition: all 0.3s ease;
+            --container-width: 1200px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            overflow-x: hidden;
+        }
+
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container { max-width: var(--container-width); margin: 0 auto; padding: 0 20px; }
+        .section-padding { padding: 80px 0; }
+        .text-center { text-align: center; }
+
+        /* --- HEADER & NAV --- */
+        header {
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        nav { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--text-light); letter-spacing: -0.5px; }
+        .logo span { color: var(--accent-color); }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: var(--text-light); font-weight: 500; font-size: 0.95rem; transition: var(--transition); }
+        .nav-links a:hover { color: var(--accent-color); }
+        .cta-btn { background-color: var(--primary-color); color: white; padding: 10px 24px; border-radius: 6px; font-weight: 600; transition: var(--transition); display: inline-block; }
+        .cta-btn:hover { background-color: var(--secondary-color); transform: translateY(-2px); }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1e3a8a 100%);
+            color: var(--text-light);
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px;
+            background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+            opacity: 0.2; border-radius: 50%;
+        }
+        .hero-content { max-width: 800px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+        .hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 24px; background: -webkit-linear-gradient(45deg, #ffffff, #67e8f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.25rem; color: #cbd5e1; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+        /* --- FEATURES SECTION --- */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .feature-card {
+            background: var(--card-bg); padding: 40px 30px; border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: var(--transition);
+            border: 1px solid #e2e8f0; display: flex; flex-direction: column; justify-content: space-between;
+        }
+        .feature-card:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: var(--primary-color); }
+        .card-icon { width: 60px; height: 60px; background-color: #eff6ff; color: var(--primary-color); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; font-weight: bold; }
+        .feature-card h2 { font-size: 1.5rem; margin-bottom: 15px; color: var(--text-dark); }
+        .feature-card p { color: #475569; margin-bottom: 20px; font-size: 1rem; }
+        .feature-card ul { margin-bottom: 20px; }
+        .feature-card li { position: relative; padding-left: 20px; margin-bottom: 8px; font-size: 0.95rem; color: #64748b; }
+        .feature-card li::before { content: '✓'; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
+        .section-title { font-size: 2.5rem; color: var(--text-dark); margin-bottom: 16px; position: relative; display: inline-block; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 4px; background: var(--primary-color); margin: 10px auto 0; border-radius: 2px; }
+        .section-subtitle { color: #64748b; font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+        /* --- EDUCATION SECTION --- */
+        .education-section { background-color: white; }
+        .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .edu-image img { border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .keyword-tag { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; }
+
+        /* --- DOMAIN SALE SECTION (In Page) --- */
+        .domain-sale { background: linear-gradient(to right, var(--primary-color), var(--accent-color)); color: white; text-align: center; border-radius: 20px; padding: 60px 40px; margin-top: 80px; }
+        .domain-sale h2 { font-size: 2.2rem; margin-bottom: 15px; }
+        .domain-sale p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .domain-btn { background-color: white; color: var(--primary-color); padding: 15px 40px; border-radius: 8px; font-weight: 800; font-size: 1.1rem; border: none; cursor: pointer; transition: var(--transition); display: inline-block; text-decoration: none;}
+        .domain-btn:hover { background-color: var(--dark-bg); color: white; transform: translateY(-2px); }
+
+        /* --- DISCLAIMER SECTION (SEO SAFE) --- */
+        .disclaimer-section {
+            background-color: #fffbeb; /* Light Yellow/Warning color */
+            border: 2px solid #fcd34d;
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+        .disclaimer-section h3 { color: #92400e; margin-bottom: 15px; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 1px; }
+        .disclaimer-section p { color: #78350f; font-size: 1rem; font-weight: 500; }
+
+        /* --- FOOTER --- */
+        footer { background-color: var(--dark-bg); color: #94a3b8; padding: 60px 0 20px; font-size: 0.9rem; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; border-bottom: 1px solid #334155; padding-bottom: 40px; }
+        .footer-col h3 { color: white; margin-bottom: 20px; font-size: 1.1rem; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a:hover { color: var(--accent-color); }
+        .copyright { text-align: center; }
+
+        /* --- POPUP MODAL STYLES (SEO SAFE) --- */
+        .popup-overlay {
+            display: none; /* Hidden by default so Google doesn't index it as content */
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .popup-overlay.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .popup-overlay.active .popup-content { transform: scale(1); }
+
+        .close-btn {
+            position: absolute; top: 15px; right: 15px; background: #f1f5f9; border: none;
+            width: 32px; height: 32px; border-radius: 50%; font-size: 18px; cursor: pointer;
+            color: #64748b; display: flex; align-items: center; justify-content: center; transition: background 0.2s;
+        }
+        .close-btn:hover { background: #e2e8f0; color: #1e293b; }
+
+        .popup-badge {
+            background: #fef3c7; color: #d97706; font-weight: 700; font-size: 0.8rem;
+            padding: 5px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+            display: inline-block; margin-bottom: 15px;
+        }
+        .popup-content h2 { font-size: 1.8rem; color: #1e293b; margin-bottom: 10px; }
+        .ahrefs-stat { font-size: 1.1rem; color: #334155; margin-bottom: 20px; font-weight: 500; }
+        .ahrefs-stat strong { color: var(--primary-color); }
+        .buy-now-link {
+            display: block; background-color: #ff5722; color: white; font-weight: 700;
+            font-size: 1.1rem; padding: 14px 20px; border-radius: 8px; text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(255, 87, 34, 0.3); transition: all 0.3s ease;
+        }
+        .buy-now-link:hover { background-color: #e64a19; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(255, 87, 34, 0.4); }
+        .popup-note { font-size: 0.85rem; color: #94a3b8; margin-top: 15px; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .edu-grid { grid-template-columns: 1fr; }
+            .domain-sale { padding: 40px 20px; }
+            .disclaimer-section { padding: 20px; margin-top: 40px; }
+        }
+        
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Sisil<span>4D</span></a>
+                <div class="nav-links">
+                    <a href="#modeling">Pemodelan</a>
+                    <a href="#development">Development</a>
+                    <a href="#education">Edukasi</a>
+                    <a href="#disclaimer">Disclaimer</a>
+                </div>
+                <!-- Direct Namecheap Link in Header -->
+                <a href="https://www.namecheap.com/domains/registration/results/?domain=sisil4d.com" target="_blank" rel="noopener noreferrer" class="cta-btn">Beli Domain</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content fade-in">
+                <h1>Revolusi Kreativitas 4D Anda Bersama Sisil4D</h1>
+                <p>Platform ultimate untuk pengembang game indie, edukator STEM, dan seniman 3D di Indonesia. Temukan tutorial, aset, dan komunitas untuk mewujudkan visi 4D Anda.</p>
+                <a href="#domain-offer" class="cta-btn" style="padding: 15px 35px; font-size: 1.1rem;">Lihat Penawaran Domain</a>
+            </div>
+        </section>
+
+        <!-- Modeling & Blender Section -->
+        <section id="modeling" class="section-padding">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 class="section-title">Tip Pemodelan & Animasi Sisil4D</h2>
+                    <p class="section-subtitle">Kuasai seni pemodelan 4D menggunakan Blender dengan panduan langkah demi langkah kami.</p>
+                </div>
+
+                <div class="features-grid">
+                    <article class="feature-card fade-in">
+                        <div>
+                            <div class="card-icon">B</div>
+                            <h2>Animasi Dinamis Sisil4D</h2>
+                            <p>Deep dive ke dalam teknik animasi Sisil4D di Blender. Pelajari cara menggerakkan elemen dinamis tanpa bergantung pada variabel eksternal yang rumit.</p>
+                            <ul>
+                                <li>Mekanika waktu 4D</li>
+                                <li>Simulasi partikel real-time</li>
+                                <li>Rigging karakter kompleks</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="feature-card fade-in">
+                        <div>
+                            <div class="card-icon">G</div>
+                            <h2>Ide Game Indie Sisil4D</h2>
+                            <p>Bagi mereka yang mengeksplorasi ide game indie Sisil4D, kami menyediakan template gratis dan cuplikan kode (code snippets) untuk memulai kreasi Anda.</p>
+                            <ul>
+                                <li>Template game puzzle</li>
+                                <li>Snippet kode JavaScript</li>
+                                <li>Aset 3D siap pakai</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="feature-card fade-in">
+                        <div>
+                            <div class="card-icon">T</div>
+                            <h2>Alat Pengembang Sisil4D</h2>
+                            <p>Buka harta karun alat dan sumber daya Sisil4D yang dirancang khusus untuk pengembang game 4D pemula hingga ahli.</p>
+                            <ul>
+                                <li>Rekomendasi software Godot</li>
+                                <li>Kursus online gratis mekanik 4D</li>
+                                <li>Desain esensial game</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Resources Section -->
+        <section id="development" class="section-padding" style="background-color: #f1f5f9;">
+            <div class="container">
+                <div class="text-center fade-in">
+                    <h2 class="section-title">Sumber Daya Pengembang Aspirasi</h2>
+                    <p class="section-subtitle">Optimasi jangka panjang (long-tail keywords) untuk menargetkan audiens niche di komunitas gaming.</p>
+                </div>
+
+                <div class="edu-grid fade-in">
+                    <div class="edu-text">
+                        <span class="keyword-tag">Godot Engine</span>
+                        <h3 style="font-size: 1.8rem; margin: 10px 0;">Prototipe Sisil4D dengan Godot</h3>
+                        <p style="margin-bottom: 20px;">
+                            Platform kami adalah tempat tujuan Anda untuk esensial desain game Sisil4D. Jelajahi kata kunci long-tail Sisil4D dalam aksi, seperti 
+                            <strong>"cara membuat teka-teki berbasis waktu Sisil4D"</strong> atau <strong>"pengembangan VR Sisil4D untuk pemula"</strong>.
+                        </p>
+                        <p style="margin-bottom: 20px;">
+                            Variasi kata kunci ini meningkatkan discoverability, mencerminkan strategi untuk istilah short-tail seperti "4D games" yang diperluas menjadi frasa terperinci. Kuasai pembuatan aset Sisil4D dengan tutorial Blender langkah demi langkah.
+                        </p>
+                        <ul>
+                            <li>✓ Pengembangan Game Mobile Sisil4D</li>
+                            <li>✓ Simulasi Edukatif & Etis</li>
+                            <li>✓ Berbagi Ide Proyek Komunitas</li>
+                        </ul>
+                    </div>
+                    <div class="edu-image">
+                        <img src="https://picsum.photos/seed/godot_dev/600/400.jpg" alt="Pengembangan game Sisil4D dengan Godot" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Section -->
+        <section id="education" class="section-padding education-section">
+            <div class="container">
+                <div class="edu-grid fade-in">
+                    <div class="edu-image">
+                        <img src="https://picsum.photos/seed/stem_edu/600/500.jpg" alt="Desain Game Edukatif Sisil4D" loading="lazy">
+                    </div>
+                    <div class="edu-text">
+                        <span class="keyword-tag">Edukasi STEM</span>
+                        <h3 style="font-size: 1.8rem; margin: 10px 0;">Eksplorasi Sisil4D dalam Desain Game Edukatif</h3>
+                        <p style="margin-bottom: 15px;">
+                            Ubah pembelajaran melalui Sisil4D dalam desain game edukatif, di mana konsep 4D membuat ide abstrak menjadi interaktif dan menyenangkan.
+                        </p>
+                        <p style="margin-bottom: 15px;">
+                            Alat edukasi Sisil4D kami memandu Anda dalam membuat game STEM, seperti simulasi fisika dengan fitur manipulasi waktu Sisil4D. Variasi kata kunci seperti
+                            <em>"Sisil4D untuk proyek sekolah"</em> atau <em>"game edukatif Sisil4D terbaik"</em> menyoroti bagaimana pencarian long-tail mendorong lalu lintas bertarget ke konten edukasi.
+                        </p>
+                        <p>
+                            Pelajari dasar skrip Sisil4D dalam JavaScript untuk prototipe berbasis web, menekankan hasil deterministik untuk permainan yang adil. Dengan sumber daya gratis Sisil4D, termasuk aset yang dapat diunduh, Anda dapat membangun teka-teki matematika atau petualangan sejarah dengan mudah.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Sales Section (In Page) -->
+        <section id="domain-offer" class="container">
+            <div class="domain-sale fade-in">
+                <h2>Miliki Domain Sisil4D.com</h2>
+                <p>Domain premium ini tersedia untuk dijual langsung melalui Namecheap. Sempurna untuk branding game 4D atau teknologi masa depan Anda.</p>
+                
+                <!-- Direct Namecheap Link Button -->
+                <a href="https://www.namecheap.com/domains/registration/results/?domain=sisil4d.com" target="_blank" rel="noopener noreferrer" class="domain-btn">
+                    Beli Sekarang di Namecheap
+                </a>
+            </div>
+        </section>
+
+        <!-- DISCLAIMER SECTION -->
+        <section id="disclaimer" class="container">
+            <div class="disclaimer-section fade-in">
+                <h3>⚠️ PERNYATAAN PENTING (DISCLAIMER)</h3>
+                <p>
+                    <strong>Situs ini HANYA menjual aset domain "Sisil4D.com".</strong> Kami <strong>TIDAK</strong> menyediakan layanan perjudian (judi online, togel, atau sejenisnya), permainan uang asli, atau bentuk aktivitas ilegal apapun. 
+                    Kami bukan operator game. Konten di halaman ini semata-mata untuk tujuan demonstrasi teknologi (SEO/Showcase) dan penjualan domain. Transaksi pembelian domain dilakukan secara aman melalui platform pihak ketiga (Namecheap).
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Tentang Sisil4D</h3>
+                    <p>Sisil4D adalah penawaran domain premium yang berfokus pada potensi pengembangan game 4D, pemodelan 3D tingkat lanjut, dan integrasi teknologi di Indonesia.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#modeling">Pemodelan Blender</a></li>
+                        <li><a href="#development">Alat Developer</a></li>
+                        <li><a href="#education">Edukasi STEM</a></li>
+                        <li><a href="#domain-offer">Beli Domain</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Sisil4D Domain Sales. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL HTML (SEO SAFE) -->
+    <div id="premiumPopup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-btn" id="closePopup">&times;</button>
+            
+            <span class="popup-badge">Domain Premium Dijual</span>
+            
+            <h2>SISIL4D.COM</h2>
+            
+            <p class="ahrefs-stat">
+                <strong>200k+</strong> Pencarian Bulanan untuk "SISIL4D" <br>
+                <span style="font-size: 0.9em; font-weight: normal; color: #64748b;">(Sumber: Ahrefs)</span>
+            </p>
+            
+            <p style="margin-bottom: 25px; color: #475569;">
+                Kuasai niche 4D dengan domain berotoritas tinggi ini. Sempurna untuk platform gaming, teknologi, atau edukasi.
+            </p>
+            
+            <!-- Namecheap Link -->
+            <a href="https://www.namecheap.com/domains/registration/results/?domain=sisil4d.com" target="_blank" class="buy-now-link">
+                Beli di Namecheap
+            </a>
+            
+            <p class="popup-note">Transaksi aman melalui Namecheap</p>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // 2. Intersection Observer for Fade-in Animations
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+
+            // 3. POPUP LOGIC (Delayed 2 Seconds)
+            const popup = document.getElementById('premiumPopup');
+            const closeBtn = document.getElementById('closePopup');
+
+            const openPopup = () => {
+                popup.classList.add('active');
+            };
+
+            const closePopup = () => {
+                popup.classList.remove('active');
+            };
+
+            // Show popup after 2 seconds
+            setTimeout(openPopup, 2000);
+
+            // Close events
+            closeBtn.addEventListener('click', closePopup);
+            
+            // Close if clicking outside
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    closePopup();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && popup.classList.contains('active')) {
+                    closePopup();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
