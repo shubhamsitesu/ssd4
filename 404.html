@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan | Sisil4D</title>
+    <meta name="robots" content="noindex, follow">
+    <style>
+        :root {
+            --primary-color: #2563EB;
+            --accent-color: #06B6D4;
+            --dark-bg: #0F172A;
+            --text-dark: #1E293B;
+            --text-light: #F1F5F9;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 1;
+            background: -webkit-linear-gradient(45deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        p {
+            color: #94a3b8;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+        }
+        .btn:hover {
+            background-color: transparent;
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #475569;
+            margin-left: 10px;
+            color: #cbd5e1;
+        }
+        .btn-outline:hover {
+            border-color: white;
+            color: white;
+        }
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .error-code { font-size: 5rem; }
+            .btn { width: 100%; margin-bottom: 10px; margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-code">404</div>
+    <h1>Ups! Halaman Tidak Ditemukan</h1>
+    <p>
+        Sepertinya Anda tersesat di dimensi 4D. Halaman yang Anda cari mungkin telah dipindahkan, dihapus, atau belum pernah ada.
+    </p>
+
+    <div>
+        <a href="https://sisil4d.com/" class="btn">Kembali ke Beranda</a>
+        <!-- Tetap menawarkan opsi beli domain -->
+        <a href="https://www.namecheap.com/domains/registration/results/?domain=sisil4d.com" target="_blank" class="btn btn-outline">Beli Domain Sisil4D</a>
+    </div>
+
+</body>
+</html>
