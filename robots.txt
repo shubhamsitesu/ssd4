@@ -1,0 +1,576 @@
+# Allow major search engines
+User-agent: Googlebot
+Disallow: 
+
+User-agent: Googlebot-Image
+Disallow: 
+
+User-agent: Googlebot-Video
+Disallow: 
+
+User-agent: Mediapartners-Google
+Disallow: 
+
+User-agent: Bingbot
+Disallow: 
+
+User-agent: Slurp
+Disallow: 
+
+User-agent: DuckDuckBot
+Disallow: 
+
+User-agent: Baiduspider
+Disallow: 
+
+User-agent: YandexBot
+Disallow: 
+
+User-agent: facebookexternalhit
+Disallow: 
+
+User-agent: Twitterbot
+Disallow: 
+
+User-agent: LinkedInBot
+Disallow: 
+
+User-agent: WhatsApp
+Disallow: 
+
+# Block archiving services
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Wayback Machine
+Disallow: /
+
+User-agent: archive.is
+Disallow: /
+
+User-agent: webcite
+Disallow: /
+
+User-agent: snapshot
+Disallow: /
+
+User-agent: archive_it
+Disallow: /
+
+User-agent: webcache
+Disallow: /
+
+User-agent: perma.cc
+Disallow: /
+
+User-agent: screenshots.com
+Disallow: /
+
+# Block screenshot services
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
+
+User-agent: PagePeeker
+Disallow: /
+
+User-agent: ShrinkTheWeb
+Disallow: /
+
+User-agent: SmallSeoTools
+Disallow: /
+
+User-agent: Wotbox
+Disallow: /
+
+User-agent: Qwantify
+Disallow: /
+
+User-agent: ScreenshotBot
+Disallow: /
+
+User-agent: Thumbor
+Disallow: /
+
+User-agent: CaptureBot
+Disallow: /
+
+User-agent: ScreenShotService
+Disallow: /
+
+User-agent: SiteShoter
+Disallow: /
+
+User-agent: WebShotsBot
+Disallow: /
+
+User-agent: ThumbshotsBot
+Disallow: /
+
+User-agent: Page2Images
+Disallow: /
+
+User-agent: RobotScreenShot
+Disallow: /
+
+User-agent: W3C_Validator
+Disallow: /
+
+# Block other unwanted bots
+User-agent: 80legs
+Disallow: /
+
+User-agent: Aboundex
+Disallow: /
+
+User-agent: AddThis.com
+Disallow: /
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+User-agent: BaiduImagespider
+Disallow: /
+
+User-agent: Barkrowler
+Disallow: /
+
+User-agent: BDCbot
+Disallow: /
+
+User-agent: BitSightBot
+Disallow: /
+
+User-agent: BuzzSumo
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: CazoodleBot
+Disallow: /
+
+User-agent: Cliqzbot
+Disallow: /
+
+User-agent: Comodo-Certificates-Spider
+Disallow: /
+
+User-agent: CopyRightCheck
+Disallow: /
+
+User-agent: CosmixCrawler
+Disallow: /
+
+User-agent: Crawlly
+Disallow: /
+
+User-agent: Curious George
+Disallow: /
+
+User-agent: Curl
+Disallow: /
+
+User-agent: Custo
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Datanyze
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Digg Deeper
+Disallow: /
+
+User-agent: DomainCrawler
+Disallow: /
+
+User-agent: DomainSigmaCrawler
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: EasouSpider
+Disallow: /
+
+User-agent: Embedly
+Disallow: /
+
+User-agent: Entireweb
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: Ezooms
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Feedbin
+Disallow: /
+
+User-agent: FeedlyBot
+Disallow: /
+
+User-agent: Findxbot
+Disallow: /
+
+User-agent: FlipboardProxy
+Disallow: /
+
+User-agent: Gowikibot
+Disallow: /
+
+User-agent: GrapeshotCrawler
+Disallow: /
+
+User-agent: HubSpot Crawler
+Disallow: /
+
+User-agent: HyperCrawl
+Disallow: /
+
+User-agent: IndeedBot
+Disallow: /
+
+User-agent: IstellaBot
+Disallow: /
+
+User-agent: K7MLWCBot
+Disallow: /
+
+User-agent: Kraken
+Disallow: /
+
+User-agent: Leikibot
+Disallow: /
+
+User-agent: Linkdexbot
+Disallow: /
+
+User-agent: LinkedInBot
+Disallow: /
+
+User-agent: LinkisBot
+Disallow: /
+
+User-agent: LivelapBot
+Disallow: /
+
+User-agent: Magpie-Crawler
+Disallow: /
+
+User-agent: Mail.RU_Bot
+Disallow: /
+
+User-agent: MeanPathBot
+Disallow: /
+
+User-agent: MetaURI
+Disallow: /
+
+User-agent: MuckRack
+Disallow: /
+
+User-agent: NetcraftSurveyAgent
+Disallow: /
+
+User-agent: Netvibes
+Disallow: /
+
+User-agent: NewsGator
+Disallow: /
+
+User-agent: Nutch
+Disallow: /
+
+User-agent: OpenWebSpider
+Disallow: /
+
+User-agent: OrangeBot
+Disallow: /
+
+User-agent: OutclicksBot
+Disallow: /
+
+User-agent: PagesInventory
+Disallow: /
+
+User-agent: PaperLiBot
+Disallow: /
+
+User-agent: Peeplo Screenshot Bot
+Disallow: /
+
+User-agent: Pinterestbot
+Disallow: /
+
+User-agent: Plukkie
+Disallow: /
+
+User-agent: PostRank
+Disallow: /
+
+User-agent: PrivacyAwareBot
+Disallow: /
+
+User-agent: Prlog
+Disallow: /
+
+User-agent: Proximic
+Disallow: /
+
+User-agent: PiplBot
+Disallow: /
+
+User-agent: Qwantify
+Disallow: /
+
+User-agent: Readability
+Disallow: /
+
+User-agent: Reeder
+Disallow: /
+
+User-agent: RetrevoPageAnalyzer
+Disallow: /
+
+User-agent: Riddler
+Disallow: /
+
+User-agent: ScoutJet
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: ScreenerBot
+Disallow: /
+
+User-agent: SearchSight
+Disallow: /
+
+User-agent: SemanticsBot
+Disallow: /
+
+User-agent: SEOlyticsCrawler
+Disallow: /
+
+User-agent: Seobility
+Disallow: /
+
+User-agent: Seomoz
+Disallow: /
+
+User-agent: SEOstatsBot
+Disallow: /
+
+User-agent: SerendeputyBot
+Disallow: /
+
+User-agent: Server Density
+Disallow: /
+
+User-agent: ShopWiki
+Disallow: /
+
+User-agent: ShowyouBot
+Disallow: /
+
+User-agent: SilverReader
+Disallow: /
+
+User-agent: SimplePie
+Disallow: /
+
+User-agent: SiteExplorer
+Disallow: /
+
+User-agent: Siteimprove.com
+Disallow: /
+
+User-agent: SISTRIX
+Disallow: /
+
+User-agent: Slackbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: SocialRankIOBot
+Disallow: /
+
+User-agent: Spinn3r
+Disallow: /
+
+User-agent: SputnikBot
+Disallow: /
+
+User-agent: Tagoobot
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: Teoma
+Disallow: /
+
+User-agent: TinEye
+Disallow: /
+
+User-agent: Traackr.com
+Disallow: /
+
+User-agent: TrapitBot
+Disallow: /
+
+User-agent: Trello
+Disallow: /
+
+User-agent: TweetmemeBot
+Disallow: /
+
+User-agent: Twisted PageGetter
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: Unshorten.It
+Disallow: /
+
+User-agent: Vagabondo
+Disallow: /
+
+User-agent: VBSEO
+Disallow: /
+
+User-agent: Viber
+Disallow: /
+
+User-agent: WebIndexer
+Disallow: /
+
+User-agent: Websquash.com
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: Who.is Bot
+Disallow: /
+
+User-agent: Wocodi
+Disallow: /
+
+User-agent: WomlpeBot
+Disallow: /
+
+User-agent: WordupinfoSearch
+Disallow: /
+
+User-agent: Wotbox
+Disallow: /
+
+User-agent: WP Rocket
+Disallow: /
+
+User-agent: XML Sitemaps Generator
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexMetrika
+Disallow: /
+
+User-agent: YandexNews
+Disallow: /
+
+User-agent: YandexVideo
+Disallow: /
+
+User-agent: Yeti
+Disallow: /
+
+User-agent: YisouSpider
+Disallow: /
+
+User-agent: YodaoBot
+Disallow: /
+
+User-agent: YooglGAgent
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Zabbix
+Disallow: /
+
+User-agent: ZoomInfoBot
+Disallow: /
+
+User-agent: ZumBot
+Disallow: /
+
+User-agent: Zyte
+Disallow: /
+
+# Block all other bots from sensitive directories
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /logs/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-content/themes/
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+
+# Sitemap location
+Sitemap: https://sisil4d.com/sitemap.xml
